@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (c) 2012, 2023 Eclipse Foundation and others.
+  All rights reserved. This program and the accompanying materials
+  are made available under the terms of the Eclipse Distribution License v1.0
+  which accompanies this distribution, and is available at
+  http://www.eclipse.org/org/documents/edl-v10.php
+
+  Contributors:
+     Igor Fedorenko - initial implementation
+     EclipseSource - ongoing development
+     Mickael Istria (Red Hat Inc.) - Creation of front-end package
+-->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.eclipse.epp</groupId>
+    <artifactId>org.eclipse.epp-parent</artifactId>
+    <version>4.29.0-SNAPSHOT</version>
+    <relativePath>releng/org.eclipse.epp.config/parent/</relativePath>
+  </parent>
+
+  <artifactId>org.eclipse.epp-buildall</artifactId>
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>archive-template</module>
+    <module>packages/org.eclipse.epp.package.common</module>
+    <module>packages/org.eclipse.epp.package.common.feature</module>
+  </modules>
+
+  <profiles>
+    <profile>
+      <id>epp.package.cpp</id>
+      <modules>
+        <module>packages/org.eclipse.epp.package.cpp</module>
+        <module>packages/org.eclipse.epp.package.cpp.feature</module>
+        <module>packages/org.eclipse.epp.package.cpp.product</module>
+      </modules>
+    </profile>
+    <profile>
+      <id>epp.package.dsl</id>
+      <modules>
+        <module>packages/org.eclipse.epp.package.dsl</module>
+        <module>packages/org.eclipse.epp.package.dsl.feature</module>
+        <module>packages/org.eclipse.epp.package.dsl.product</module>
+      </modules>
+    </profile>
+    <profile>
+      <id>epp.package.embedcpp</id>
+      <modules>
+        <module>packages/org.eclipse.epp.package.embedcpp</module>
+        <module>packages/org.eclipse.epp.package.embedcpp.feature</module>
+        <module>packages/org.eclipse.epp.package.embedcpp.product</module>
+      </modules>
+    </profile>
+    <profile>
+      <id>epp.package.java</id>
+      <modules>
+        <module>packages/org.eclipse.epp.package.java</module>
+        <module>packages/org.eclipse.epp.package.java.feature</module>
+        <module>packages/org.eclipse.epp.package.java.product</module>
+      </modules>
+    </profile>
+    <profile>
+      <id>epp.package.jee</id>
+      <modules>
+        <module>packages/org.eclipse.epp.package.jee</module>
+        <module>packages/org.eclipse.epp.package.jee.feature</module>
+        <module>packages/org.eclipse.epp.package.jee.product</module>
+      </modules>
+    </profile>
+    <profile>
+      <id>epp.package.modeling</id>
+      <modules>
+        <module>packages/org.eclipse.epp.package.modeling</module>
+        <module>packages/org.eclipse.epp.package.modeling.feature</module>
+        <module>packages/org.eclipse.epp.package.modeling.product</module>
+      </modules>
+    </profile>
+    <profile>
+      <id>epp.package.parallel</id>
+      <modules>
+        <module>packages/org.eclipse.epp.package.parallel</module>
+        <module>packages/org.eclipse.epp.package.parallel.feature</module>
+        <module>packages/org.eclipse.epp.package.parallel.product</module>
+      </modules>
+    </profile>
+    <profile>
+      <id>epp.package.php</id>
+      <modules>
+        <module>packages/org.eclipse.epp.package.php</module>
+        <module>packages/org.eclipse.epp.package.php.feature</module>
+        <module>packages/org.eclipse.epp.package.php.product</module>
+      </modules>
+    </profile>
+    <profile>
+      <id>epp.package.rcp</id>
+      <modules>
+        <module>packages/org.eclipse.epp.package.rcp</module>
+        <module>packages/org.eclipse.epp.package.rcp.feature</module>
+        <module>packages/org.eclipse.epp.package.rcp.product</module>
+      </modules>
+    </profile>
+    <profile>
+      <id>epp.package.scout</id>
+      <modules>
+        <module>packages/org.eclipse.epp.package.scout</module>
+        <module>packages/org.eclipse.epp.package.scout.feature</module>
+        <module>packages/org.eclipse.epp.package.scout.product</module>
+      </modules>
+    </profile>
+    <profile>
+      <id>epp.package.committers</id>
+      <modules>
+        <module>packages/org.eclipse.epp.package.committers</module>
+        <module>packages/org.eclipse.epp.package.committers.feature</module>
+        <module>packages/org.eclipse.epp.package.committers.product</module>
+      </modules>
+    </profile>
+  </profiles>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.eclipse.tycho.extras</groupId>
+        <artifactId>tycho-eclipserun-plugin</artifactId>
+        <version>${tycho.version}</version>
+        <executions>
+          <execution>
+            <id>remove-justj-from-p2</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>eclipse-run</goal>
+            </goals>
+            <configuration>
+              <appArgLine>-data target/antrun-workspace -application org.eclipse.ant.core.antRunner -buildfile ${basedir}/releng/org.eclipse.epp.config/tools/remove-justj-from-p2.xml</appArgLine>
+              <repositories>
+                <repository>
+                  <id>eclipse</id>
+                  <layout>p2</layout>
+                  <url>http://download.eclipse.org/releases/latest</url>
+                </repository>
+              </repositories>
+              <dependencies>
+                <dependency>
+                  <artifactId>org.eclipse.ant.core</artifactId>
+                  <type>eclipse-plugin</type>
+                </dependency>
+                <dependency>
+                  <artifactId>org.apache.ant</artifactId>
+                  <type>eclipse-plugin</type>
+                </dependency>
+                <dependency>
+                  <artifactId>org.eclipse.pde.api.tools</artifactId>
+                  <type>eclipse-plugin</type>
+                </dependency>
+              </dependencies>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-p2-repository-plugin</artifactId>
+        <version>${tycho.version}</version>
+        <executions>
+          <execution>
+            <id>add-missing-checksums</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>fix-artifacts-metadata</goal>
+            </goals>
+            <configuration>
+              <repositoryLocation>${basedir}/archive/repository</repositoryLocation>
+              <repositoryName>EPP</repositoryName>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

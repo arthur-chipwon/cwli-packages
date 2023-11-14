@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Common EPP Bundle
+Bundle-SymbolicName: org.eclipse.epp.package.common;singleton:=true
+Bundle-Version: 4.29.0.qualifier
+Bundle-Vendor: Eclipse Packaging Project
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Require-Bundle: org.eclipse.platform,
+ org.eclipse.equinox.app,
+ org.eclipse.ui,
+ org.eclipse.core.commands,
+ org.eclipse.core.runtime,
+ org.eclipse.ui.workbench
+Bundle-Localization: plugin
+Eclipse-BundleShape: dir
