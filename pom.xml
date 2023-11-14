@@ -122,6 +122,14 @@
         <module>packages/org.eclipse.epp.package.committers.product</module>
       </modules>
     </profile>
+    <profile>
+      <id>epp.package.cwli</id>
+      <modules>
+        <module>packages/org.eclipse.epp.package.cwli</module>
+        <module>packages/org.eclipse.epp.package.cwli.feature</module>
+        <module>packages/org.eclipse.epp.package.cwli.product</module>
+      </modules>
+    </profile>
   </profiles>
   <build>
     <plugins>

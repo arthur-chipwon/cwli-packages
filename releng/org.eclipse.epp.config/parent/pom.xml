@@ -34,8 +34,10 @@
     <eclipse.epp.archiveDirectory>${basedir}/../../archive/</eclipse.epp.archiveDirectory>
     <!-- The location that is used to assemble the single EPP configuration p2 repository -->
     <eclipse.epp.targetRepository>${eclipse.epp.archiveDirectory}/repository/</eclipse.epp.targetRepository>
+    <!-- Prefix of the vendor release -->
+    <PREFIX_VENDOR>CW</PREFIX_VENDOR>
     <!-- Name of the release (no milestone) -->
-    <RELEASE_NAME>2023-09</RELEASE_NAME>
+    <RELEASE_NAME>2309.1.25</RELEASE_NAME>
     <!-- Name of the milestone -->
     <RELEASE_MILESTONE>R</RELEASE_MILESTONE>
     <!-- Version of the release -->
@@ -47,7 +49,7 @@
     <!-- ID used to generate the filename of the packages -->
     <eclipse.simultaneous.release.id>${RELEASE_NAME}-${RELEASE_MILESTONE}</eclipse.simultaneous.release.id>
     <!-- Timestamp used in various places, e.g. the about dialog (see about.mappings) -->
-    <eclipse.simultaneous.release.build>${maven.build.timestamp}</eclipse.simultaneous.release.build>
+    <eclipse.simultaneous.release.build>${PREFIX_VENDOR}-${maven.build.timestamp}</eclipse.simultaneous.release.build>
     <!-- Human readable name of the release, e.g. used in the about dialog (see about.mappings) -->
     <!-- TODO the two alternative values of eclipse.simultaneous.release.name could be automated, perhaps with a profile dependent on RELEASE_MILESTONE -->
     <!-- eclipse.simultaneous.release.name value for non-R builds -->
@@ -332,9 +334,9 @@
             <products>
               <product>
                 <id>${project.artifactId}</id>
-                <rootFolder>eclipse</rootFolder>
+                <rootFolder>cwli</rootFolder>
                 <rootFolders>
-                  <macosx>Eclipse.app</macosx>
+                  <macosx>LogicInsght.app</macosx>
                 </rootFolders>
                 <archiveFileName>${build}_eclipse-${eclipse.epp.id}-${eclipse.simultaneous.release.id}</archiveFileName>
               </product>

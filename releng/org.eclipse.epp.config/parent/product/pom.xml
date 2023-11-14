@@ -171,7 +171,7 @@
                 <configuration>
                   <baseSearchDir>${project.build.directory}/products/${project.artifactId}</baseSearchDir>
                   <fileNames>
-                    <fileName>Eclipse.app</fileName>
+                    <fileName>LogicInsight.app</fileName>
                   </fileNames>
                   <timeoutMillis>300000</timeoutMillis> <!-- 5 min -->
                   <entitlements>${project.basedir}/../../releng/org.eclipse.epp.config/macos/product.entitlements</entitlements>
