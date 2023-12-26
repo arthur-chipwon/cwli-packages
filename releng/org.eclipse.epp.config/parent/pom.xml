@@ -58,6 +58,11 @@
     <eclipse.simultaneous.release.name>${RELEASE_NAME} (${RELEASE_VERSION})</eclipse.simultaneous.release.name>
     <!-- Upstream p2 repository, used as a source for pre-compiled build artifacts -->
     <eclipse.simultaneous.release.repository>${SIMREL_REPO}</eclipse.simultaneous.release.repository>
+    <!-- Embedded CDT specifics -->
+    <embedcdt.packageFolderName>2023-09</embedcdt.packageFolderName>
+    <embedcdt.version>6.4.0</embedcdt.version>
+    <!-- Use /releases/${embedcdt.version}/p2/ for final the releases and /updates/neon-test/ for develop packages -->
+    <embedcdt.repository>file:///C:/Users/Public/org.eclipse.embedcdt.repository-6.4.0/</embedcdt.repository>
   </properties>
 
   <prerequisites>
@@ -95,6 +100,16 @@
       <id>justj-epp</id><!-- Keep URL in sync with Oomph setup-->
       <url>https://download.eclipse.org/justj/epp/milestone/latest/</url>
       <layout>p2</layout>
+    </repository>
+    <repository>
+      <id>embedcdt</id>
+      <layout>p2</layout>
+      <url>${embedcdt.repository}</url>
+    </repository>
+	<repository>
+      <id>corrosion</id>
+      <layout>p2</layout>
+      <url>https://download.eclipse.org/corrosion/releases/1.2.4/</url>
     </repository>
   </repositories>
 
