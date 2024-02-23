@@ -58,6 +58,10 @@
     <eclipse.simultaneous.release.name>${RELEASE_NAME} (${RELEASE_VERSION})</eclipse.simultaneous.release.name>
     <!-- Upstream p2 repository, used as a source for pre-compiled build artifacts -->
     <eclipse.simultaneous.release.repository>${SIMREL_REPO}</eclipse.simultaneous.release.repository>
+    <!-- CDT specifics -->
+    <cdt.packageFolderName>2023-09</cdt.packageFolderName>
+    <cdt.version>11.3.0</cdt.version>
+    <cdt.repository>file:///C:/Users/Public/org.eclipse.cdt.repository-11.3.0/</cdt.repository>
     <!-- Embedded CDT specifics -->
     <embedcdt.packageFolderName>2023-09</embedcdt.packageFolderName>
     <embedcdt.version>6.4.0</embedcdt.version>
@@ -100,6 +104,11 @@
       <id>justj-epp</id><!-- Keep URL in sync with Oomph setup-->
       <url>https://download.eclipse.org/justj/epp/milestone/latest/</url>
       <layout>p2</layout>
+    </repository>
+    <repository>
+      <id>cdt</id>
+      <layout>p2</layout>
+      <url>${cdt.repository}</url>
     </repository>
     <repository>
       <id>embedcdt</id>
