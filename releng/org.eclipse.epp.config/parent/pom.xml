@@ -67,6 +67,8 @@
     <embedcdt.version>6.4.0</embedcdt.version>
     <!-- Use /releases/${embedcdt.version}/p2/ for final the releases and /updates/neon-test/ for develop packages -->
     <embedcdt.repository>file:///C:/Users/Public/org.eclipse.embedcdt.repository-6.4.0/</embedcdt.repository>
+    <chirpwow.version>1.0.0</chirpwow.version>
+    <chirpwow.repository>file:///C:/Users/Public/com.chirpwow.ide.repository-1.0.0</chirpwow.repository>
   </properties>
 
   <prerequisites>
@@ -102,7 +104,7 @@
     </repository>
     <repository>
       <id>justj-epp</id><!-- Keep URL in sync with Oomph setup-->
-      <url>https://download.eclipse.org/justj/epp/milestone/latest/</url>
+      <url>https://download.eclipse.org/justj/epp/release/17.0.0.v20230831-1210/</url>
       <layout>p2</layout>
     </repository>
     <repository>
@@ -114,6 +116,11 @@
       <id>embedcdt</id>
       <layout>p2</layout>
       <url>${embedcdt.repository}</url>
+    </repository>
+    <repository>
+      <id>chirpwow</id>
+      <layout>p2</layout>
+      <url>${chirpwow.repository}</url>
     </repository>
 	<repository>
       <id>corrosion</id>
