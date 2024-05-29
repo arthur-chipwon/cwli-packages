@@ -277,14 +277,13 @@ United States, other countries, or both.
       <feature id="org.eclipse.embedcdt.packs" installMode="root"/>
       <feature id="org.eclipse.embedcdt.doc.user" installMode="root"/>
       <feature id="org.eclipse.embedcdt.templates.ad" installMode="root"/>
-      <feature id="org.eclipse.embedcdt.templates.chirpwow" installMode="root"/>
+      <feature id="org.eclipse.embedcdt.templates.chipwon" installMode="root"/>
       <feature id="org.eclipse.embedcdt.templates.cortexm" installMode="root"/>
       <feature id="org.eclipse.embedcdt.templates.freescale" installMode="root"/>
       <feature id="org.eclipse.embedcdt.templates.stm" installMode="root"/>
       <feature id="org.eclipse.embedcdt.templates.sifive" installMode="root"/>
       <feature id="org.eclipse.embedcdt.templates.xpack" installMode="root"/>
       <feature id="org.eclipse.mylyn.cdt.feature" installMode="root"/>
-      <feature id="com.chirpwow.ide.feature" installMode="root"/>
    </features>
    <plugins>
       <!-- either m2e.logback or slf4j.simple should be provided in each package -->

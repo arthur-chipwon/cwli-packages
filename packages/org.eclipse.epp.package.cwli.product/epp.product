@@ -277,6 +277,7 @@ United States, other countries, or both.
       <feature id="org.eclipse.embedcdt.packs" installMode="root"/>
       <feature id="org.eclipse.embedcdt.doc.user" installMode="root"/>
       <feature id="org.eclipse.embedcdt.templates.ad" installMode="root"/>
+      <feature id="org.eclipse.embedcdt.templates.chipwon" installMode="root"/>
       <feature id="org.eclipse.embedcdt.templates.cortexm" installMode="root"/>
       <feature id="org.eclipse.embedcdt.templates.freescale" installMode="root"/>
       <feature id="org.eclipse.embedcdt.templates.stm" installMode="root"/>
