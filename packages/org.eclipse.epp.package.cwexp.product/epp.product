@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="Logic Insight - ChirpWow IDE" uid="epp.package.cwli" id="org.eclipse.epp.package.cwli.product" application="org.eclipse.ui.ide.workbench" version="4.29.0.qualifier" type="mixed" includeLaunchers="true" autoIncludeRequirements="true">
+<product name="Experiment - ChirpWow IDE" uid="epp.package.cwexp" id="org.eclipse.epp.package.cwexp.product" application="org.eclipse.ui.ide.workbench" version="4.29.0.qualifier" type="mixed" includeLaunchers="true" autoIncludeRequirements="true">
 
    <aboutInfo>
       <image path="/org.eclipse.epp.package.cwli/greyrace_lg.png"/>
@@ -14,7 +14,7 @@
    </configIni>
 
    <launcherArgs>
-      <programArgs>-product org.eclipse.epp.package.cwli.product
+      <programArgs>-product org.eclipse.epp.package.cwexp.product
 -showsplash org.eclipse.epp.package.common
 --launcher.defaultAction openFile
 --launcher.appendVmargs
@@ -44,7 +44,7 @@
       startupProgressRect="2,290,448,10"
       startupMessageRect="7,265,320,20"
       startupForegroundColor="ffffff" />
-   <launcher name="cwli">
+   <launcher name="cwexp">
       <linux icon="../../icons/orangecar.xpm"/>
       <macosx icon="../../icons/orangecar.icns"/>
       <win useIco="true">
@@ -239,7 +239,7 @@ United States, other countries, or both.
       <feature id="org.eclipse.mylyn.github.feature" installMode="root"/>
       <feature id="org.eclipse.mylyn.jenkins.feature" installMode="root"/>
       <feature id="org.eclipse.mylyn.reviews.feature" installMode="root"/>
-      <feature id="org.eclipse.epp.package.cwli.feature" version="4.29.0.qualifier"/>
+      <feature id="org.eclipse.epp.package.cwexp.feature" version="4.29.0.qualifier"/>
       <feature id="org.eclipse.cdt" installMode="root"/>
       <feature id="org.eclipse.cdt.autotools" installMode="root"/>
       <feature id="org.eclipse.cdt.build.crossgcc" installMode="root"/>
@@ -277,13 +277,14 @@ United States, other countries, or both.
       <feature id="org.eclipse.embedcdt.packs" installMode="root"/>
       <feature id="org.eclipse.embedcdt.doc.user" installMode="root"/>
       <feature id="org.eclipse.embedcdt.templates.ad" installMode="root"/>
+      <feature id="org.eclipse.embedcdt.templates.chirpwow" installMode="root"/>
       <feature id="org.eclipse.embedcdt.templates.cortexm" installMode="root"/>
       <feature id="org.eclipse.embedcdt.templates.freescale" installMode="root"/>
       <feature id="org.eclipse.embedcdt.templates.stm" installMode="root"/>
       <feature id="org.eclipse.embedcdt.templates.sifive" installMode="root"/>
       <feature id="org.eclipse.embedcdt.templates.xpack" installMode="root"/>
       <feature id="org.eclipse.mylyn.cdt.feature" installMode="root"/>
-      <feature id="com.chipwon.ide.feature" installMode="root"/>
+      <feature id="com.chirpwow.ide.feature" installMode="root"/>
    </features>
    <plugins>
       <!-- either m2e.logback or slf4j.simple should be provided in each package -->

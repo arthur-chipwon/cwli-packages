@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="org.eclipse.epp.package.cwli.feature"
+      id="org.eclipse.epp.package.cwexp.feature"
       label="EPP CWLI Feature"
       version="4.29.0.qualifier"
-      provider-name="ChipWon Technology"
-      plugin="org.eclipse.epp.package.cwli"
+      provider-name="ChirpWow"
+      plugin="org.eclipse.epp.package.cwexp"
       license-feature="org.eclipse.license"
       license-feature-version="0.0.0">
 
@@ -21,7 +21,7 @@
    </license>
 
    <plugin
-         id="org.eclipse.epp.package.cwli"
+         id="org.eclipse.epp.package.cwexp"
          download-size="0"
          install-size="0"
          version="0.0.0"/>

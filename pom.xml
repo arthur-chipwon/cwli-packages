@@ -125,6 +125,14 @@
     <profile>
       <id>epp.package.cwli</id>
       <modules>
+        <module>packages/org.eclipse.epp.package.cwexp</module>
+        <module>packages/org.eclipse.epp.package.cwexp.feature</module>
+        <module>packages/org.eclipse.epp.package.cwexp.product</module>
+      </modules>
+    </profile>
+    <profile>
+      <id>epp.package.cwli</id>
+      <modules>
         <module>packages/org.eclipse.epp.package.cwli</module>
         <module>packages/org.eclipse.epp.package.cwli.feature</module>
         <module>packages/org.eclipse.epp.package.cwli.product</module>

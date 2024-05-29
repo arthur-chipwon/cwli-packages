@@ -3,22 +3,22 @@
 <plugin>
    <extension
          id="product"
-         name="Logic Insight - ChipWon IDE"
+         name="Experiment - ChirpWow IDE"
          point="org.eclipse.core.runtime.products">
       <product
             application="org.eclipse.ui.ide.workbench"
-            name="Logic Insight">
+            name="Experiment">
          <property
                name="preferenceCustomization"
                value="plugin_customization.ini">
          </property>
          <property
                name="appName"
-               value="cwli">
+               value="cwexp">
          </property>
          <property
                name="aboutText"
-               value="Logic Insight&#x2122;&#xA;Version: {1}&#xA;Build id: {0}&#xA;&#xA;Copyright &#xA9; 2023 ChipWon Technology Co., Ltd.  All rights reserved.&#xA;https://www.chipwontech.com/&#xA;&#xA;This product includes software developed by the Eclipse Foundation.&#xA;https://www.eclipse.org/&#xA;&#xA;This product includes software developed by the Apache Software Foundation.&#xA;https://www.apache.org/&#xA;">
+               value="Experiment&#x2122;&#xA;Version: {1}&#xA;Build id: {0}&#xA;&#xA;Copyright &#xA9; 2023 ChirpWow Technology Co., Ltd.  All rights reserved.&#xA;https://www.chirpwow.com/&#xA;&#xA;This product includes software developed by the Eclipse Foundation.&#xA;https://www.eclipse.org/&#xA;&#xA;This product includes software developed by the Apache Software Foundation.&#xA;https://www.apache.org/&#xA;">
          </property>
          <property
                name="startupForegroundColor"
@@ -46,7 +46,7 @@
          </property>
          <property
                name="introTitle"
-               value="Welcome to the Logic Insight">
+               value="Welcome to the Experiment">
          </property>
          <property
                name="introBrandingImageText"
@@ -56,13 +56,13 @@
                name="applicationXMI"
                value="org.eclipse.platform/LegacyIDE.e4xmi">
          </property>
-         <property
+         <property 
                name="cssTheme"
                value="org.eclipse.e4.ui.css.theme.e4_default">
          </property>
          <property
-               name="applicationCSSResources"
-               value="platform:/plugin/org.eclipse.ui.themes/images/">
+               name="applicationCSSResources" 
+               value="platform:/plugin/org.eclipse.ui.themes/images/"> 
          </property>
          <property
                name="buildIdLocation"
@@ -78,7 +78,7 @@
          point="org.eclipse.ui.intro">
       <introProductBinding
             introId="org.eclipse.ui.intro.universal"
-            productId="org.eclipse.epp.package.cwli.product">
+            productId="org.eclipse.epp.package.cwexp.product">
       </introProductBinding>
    </extension>
 
