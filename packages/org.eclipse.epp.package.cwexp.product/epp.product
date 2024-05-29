@@ -4,7 +4,7 @@
 <product name="Experiment - ChirpWow IDE" uid="epp.package.cwexp" id="org.eclipse.epp.package.cwexp.product" application="org.eclipse.ui.ide.workbench" version="4.29.0.qualifier" type="mixed" includeLaunchers="true" autoIncludeRequirements="true">
 
    <aboutInfo>
-      <image path="/org.eclipse.epp.package.cwli/greyrace_lg.png"/>
+      <image path="/org.eclipse.epp.package.cwexp/greyrace_lg.png"/>
       <text>
          Specified in the plugin.xml of the branding plugin.
       </text>
@@ -20,7 +20,7 @@
 --launcher.appendVmargs
       </programArgs>
       <vmArgs>-Dosgi.requiredJavaVersion=17
--Dosgi.instance.area.default=@user.home/cwli-workspace
+-Dosgi.instance.area.default=@user.home/cwexp-workspace
 -Dosgi.dataAreaRequiresExplicitInit=true
 -Dorg.eclipse.swt.graphics.Resource.reportNonDisposed=true
 -Dorg.slf4j.simpleLogger.defaultLogLevel=off
@@ -37,7 +37,7 @@
       </vmArgsMac>
    </launcherArgs>
 
-   <windowImages i16="/org.eclipse.epp.package.cwli/orangecar16.png" i32="/org.eclipse.epp.package.cwli/orangecar32.png" i48="/org.eclipse.epp.package.cwli/orangecar48.png" i256="/org.eclipse.epp.package.cwli/orangecar256.png"/>
+   <windowImages i16="/org.eclipse.epp.package.cwexp/orangecar16.png" i32="/org.eclipse.epp.package.cwexp/orangecar32.png" i48="/org.eclipse.epp.package.cwexp/orangecar48.png" i256="/org.eclipse.epp.package.cwexp/orangecar256.png"/>
 
    <splash
       location="org.eclipse.epp.package.common"

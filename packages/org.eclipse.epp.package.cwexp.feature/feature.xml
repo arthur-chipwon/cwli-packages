@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="org.eclipse.epp.package.cwexp.feature"
-      label="EPP CWLI Feature"
+      label="EPP CWEXP Feature"
       version="4.29.0.qualifier"
       provider-name="ChirpWow"
       plugin="org.eclipse.epp.package.cwexp"
