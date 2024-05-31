@@ -37,7 +37,7 @@
     <!-- Prefix of the vendor release -->
     <PREFIX_VENDOR>CW</PREFIX_VENDOR>
     <!-- Name of the release (no milestone) -->
-    <RELEASE_NAME>2309.1.26</RELEASE_NAME>
+    <RELEASE_NAME>2309.1.27</RELEASE_NAME>
     <!-- Name of the milestone -->
     <RELEASE_MILESTONE>R</RELEASE_MILESTONE>
     <!-- Version of the release -->
