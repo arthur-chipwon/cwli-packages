@@ -241,10 +241,10 @@ United States, other countries, or both.
       <feature id="org.eclipse.mylyn.reviews.feature" installMode="root"/>
       <feature id="org.eclipse.epp.package.cwli.feature" version="4.29.0.qualifier"/>
       <feature id="org.eclipse.cdt" installMode="root"/>
-      <feature id="org.eclipse.cdt.autotools" installMode="root"/>
+      <!-- feature id="org.eclipse.cdt.autotools" installMode="root"/ -->
       <feature id="org.eclipse.cdt.build.crossgcc" installMode="root"/>
-      <feature id="org.eclipse.cdt.cmake" installMode="root"/>
-      <feature id="org.eclipse.cdt.meson" installMode="root"/>
+      <!-- feature id="org.eclipse.cdt.cmake" installMode="root"/ -->
+      <!-- feature id="org.eclipse.cdt.meson" installMode="root"/ -->
       <feature id="org.eclipse.cdt.docker.launcher" installMode="root"/>
       <feature id="org.eclipse.cdt.debug.gdbjtag" installMode="root"/>
       <feature id="org.eclipse.cdt.debug.standalone" installMode="root"/>
@@ -276,13 +276,13 @@ United States, other countries, or both.
       <feature id="org.eclipse.embedcdt.debug.gdbjtag.qemu" installMode="root"/>
       <feature id="org.eclipse.embedcdt.packs" installMode="root"/>
       <feature id="org.eclipse.embedcdt.doc.user" installMode="root"/>
-      <feature id="org.eclipse.embedcdt.templates.ad" installMode="root"/>
-      <feature id="org.eclipse.embedcdt.templates.chipwon" installMode="root"/>
-      <feature id="org.eclipse.embedcdt.templates.cortexm" installMode="root"/>
-      <feature id="org.eclipse.embedcdt.templates.freescale" installMode="root"/>
-      <feature id="org.eclipse.embedcdt.templates.stm" installMode="root"/>
-      <feature id="org.eclipse.embedcdt.templates.sifive" installMode="root"/>
-      <feature id="org.eclipse.embedcdt.templates.xpack" installMode="root"/>
+      <!-- feature id="org.eclipse.embedcdt.templates.ad" installMode="root"/ -->
+      <!-- feature id="org.eclipse.embedcdt.templates.chipwon" installMode="root"/ -->
+      <!-- feature id="org.eclipse.embedcdt.templates.cortexm" installMode="root"/ -->
+      <!-- feature id="org.eclipse.embedcdt.templates.freescale" installMode="root"/ -->
+      <!-- feature id="org.eclipse.embedcdt.templates.stm" installMode="root"/ -->
+      <!-- feature id="org.eclipse.embedcdt.templates.sifive" installMode="root"/ -->
+      <!-- feature id="org.eclipse.embedcdt.templates.xpack" installMode="root"/ -->
       <feature id="org.eclipse.mylyn.cdt.feature" installMode="root"/>
       <feature id="com.chipwon.ide.feature" installMode="root"/>
    </features>
